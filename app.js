@@ -107,6 +107,6 @@ function hideAlert() {
 }
 close.addEventListener("click", hideAlert);
 // show the alert if it hasn't been shown yet
-if (!localStorage.getItem("alertShown")) {
-  displayAlert();
-}
+// if (!localStorage.getItem("alertShown")) {
+//  displayAlert();
+// }
