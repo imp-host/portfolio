@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yaseen Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f1105d4203.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/logo_sharp.png" alt="Logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i
+            class="fa-sharp fa-solid fa-circle-chevron-down"
+            onclick="openmenu()"
+          ></i>
+        </nav>
+        <div class="header-text">
+          <p>Full-Stack Developer</p>
+          <h1>
+            Hi, I'm <span>Yaseen</span> Sayyad <br />
+            from India
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------- About ----------------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/Me.jpg" alt="My Pic" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              After completing my D.C.E, I started my career in the core domain
+              of civil engineering with GKC Projects Ltd., where I worked as a
+              Jr. Site Engineer on the "Kalammawadi Dam, Direct Pipeline"
+              project in Kolhapur district. Later, I joined Shapoorji Pallonji
+              Engg. & Construction company as a Jr. Quality Engineer and worked
+              on the "G+12 Gazetted Officers Buildings of Type-1, Type-2 &
+              Type-D officers" project in Amaravathi, the capital of Andhra
+              Pradesh. After that, I worked with BSR Infratech India Ltd. as an
+              Asst. Quality Engineer on the "Karnataka Judicial Academy" project
+              in Bangalore.
+              <br /><br />
+              In 2022, I joined Careerpedia and completed a Full-Stack training
+              program in 3 months. Later, promoted to Internship. During my
+              Internship period, I worked on real-time projects which are
+              Inkprog Technologies, and Beej Network, Ivy Reality. Currently, I
+              am starting my career as a Freelancing Web Developer.
+              <br /><br />
+              As a freelancer, I am looking for projects that challenge me and
+              allow me to showcase my skills. I am open to working on a variety
+              of projects, including [Web Development, Content Creation, Content
+              Writing, Virtual Assistance, E-Commerce, Data Entry, and
+              analysis]. I am also comfortable working with clients from
+              different industries and backgrounds.
+              <br /><br />
+              <span style="color: #fff">
+                If you are looking for a skilled and dedicated freelancer to
+                help you with your project, please feel free to reach out to me.
+                I am excited to work with you and help bring your ideas to
+                life!</span
+              >
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-end Developer</span> <br />Developing UI/UX
+                  Interfaces
+                </li>
+                <li>
+                  <span>Back-end Developer</span> <br />Developing Server side
+                  of Web Application
+                </li>
+                <li>
+                  <span>Full-Stack Developer</span> <br />Developing a complete
+                  Websites & Web Applications
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2016-2017</span> <br />GKC Projects Ltd.</li>
+                <li></li>
+                <li>
+                  <span>2017-2019</span> <br />Shapoorji Pallonji Engg. & Const.
+                  Pvt. Ltd.
+                </li>
+                <li><span>2019-2022</span> <br />BSR Infratech India Ltd.</li>
+                <li>
+                  <span>2022-2023</span> <br />Inkprog Technologies Pvt. Ltd.
+                </li>
+                <li><span>2023-Present</span> <br />Freelancer</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2013</span> <br />10th Class, SSC Board</li>
+                <li>
+                  <span>2016</span> <br />Diploma in Civil Engineering, SBTET
+                  Board
+                </li>
+                <li>
+                  <span>2022</span> <br />Web Development, Self-paced learning
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------- Services ----------------------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-end Development</h2>
+            <p>
+              I am a professional who provides frontend development services to
+              clients. As a frontend developer, I have specialized in creating
+              the visual and interactive components of websites and web
+              applications. I have a strong knowledge of HTML, CSS, and
+              JavaScript, as well as experience with various frontend frameworks
+              and libraries such as React, Bootstrap etc.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-code-branch"></i>
+            <h2>Back-end Development</h2>
+            <p>
+              My main focus is on the development and maintenance of server-side
+              applications, APIs, and databases that power the functionality of
+              web and mobile applications. This involves designing and building
+              robust and scalable backend systems that can handle large amounts
+              of data and traffic. I am a professional who specialized in
+              providing backend development services to clients. As a backend
+              developer, I have extensive knowledge of server-side programming
+              language i.e, Node.js with Express.js Framework as well as
+              database technologies like MySQL, MongoDB, with Mongoose library.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-globe"></i>
+            <h2>Full-Stack Development</h2>
+            <p>
+              I am a professional full-stack developer who specialized in MERN
+              stack development services. As a MERN stack developer, I possess a
+              broad range of skills and expertise in developing web applications
+              using MongoDB, Express.js, React, and Node.js. My services include
+              designing and developing custom web applications from scratch, as
+              well as revamping existing applications to improve their
+              functionality and performance. I have extensive knowledge of
+              front-end technologies such as HTML, CSS, JavaScript, Bootstrap
+              and React, as well as back-end technologies such as Node.js,
+              Express.js, and MongoDB.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------- Portfolio ----------------------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/work-1.png" alt="My Works Pic" />
+            <div class="layer">
+              <h3>Business Website</h3>
+              <p>
+                This is a Business Website of a company which provides the Tech
+                Services
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-2.png" alt="My Works Pic" />
+            <div class="layer">
+              <h3>Maintenance Website</h3>
+              <p>
+                This is a Business Website of a company which provides
+                Maintenance Services
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-3.png" alt="My Works Pic" />
+            <div class="layer">
+              <h3>Financial Assistance Website</h3>
+              <p>
+                This Website provides financial assistance to the right
+                potentials through integrated resources and filling the gap in
+                the financial funding ecosystem.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" onclick="openImage();return false;" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- ----------------------------------- Contact ----------------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-sharp fa-solid fa-envelope"></i> sdyaseen6@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 8341226694</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/Yaseen.Yash6"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/ya.c.n/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/YaseenSd"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://in.linkedin.com/in/yaseen-sd"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/yash-wd/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="Images/Yaseen Resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <!-- <div class="alert-container"> -->
+              <form name="submit-to-google-sheet" id="contact-form">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="number"
+                  name="Number"
+                  placeholder="Your Contact No."
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Mail ID"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+            <!-- </div> -->
+          </div>
+
+          <div class="alert" id="alert">
+            <div class="alert-message">
+              <img src="Images/tick.gif" />
+              <!-- <span class="close-btn" onclick="closeAlert()">&times;</span> -->
+              <h2>Thank you for your message!</h2>
+              <p>...I will get back you soon...</p>
+      <button class="okay" id="close">OK</button>
+    </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Yaseen, Made with <i class="fa-solid fa-heart"></i> for
+          You.
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
