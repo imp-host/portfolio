@@ -44,10 +44,10 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="Images/Me.jpg" alt="My Pic" />
+            <img src="Images/Me.jpg" alt="My Pic" style="margin-top: 20px" />
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
+            <h1 class="sub-title" style="margin: 10px 0">About Me</h1>
             <p>
               After completing my D.C.E, I started my career in the core domain
               of civil engineering with GKC Projects Ltd., where I worked as a
@@ -156,7 +156,7 @@
               JavaScript, as well as experience with various frontend frameworks
               and libraries such as React, Bootstrap etc.
             </p>
-            <a href="#">Learn more</a>
+            <a href="javascript:void(0)">Learn more</a>
           </div>
 
           <div>
@@ -173,7 +173,7 @@
               language i.e, Node.js with Express.js Framework as well as
               database technologies like MySQL, MongoDB, with Mongoose library.
             </p>
-            <a href="#">Learn more</a>
+            <a href="javascript:void(0)">Learn more</a>
           </div>
 
           <div>
@@ -191,7 +191,7 @@
               and React, as well as back-end technologies such as Node.js,
               Express.js, and MongoDB.
             </p>
-            <a href="#">Learn more</a>
+            <a href="javascript:void(0)">Learn more</a>
           </div>
         </div>
       </div>
@@ -210,7 +210,9 @@
                 This is a Business Website of a company which provides the Tech
                 Services
               </p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://inkprog.com/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
           </div>
           <div class="work">
@@ -221,7 +223,9 @@
                 This is a Business Website of a company which provides
                 Maintenance Services
               </p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="https://homapp.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
           </div>
           <div class="work">
@@ -233,7 +237,9 @@
                 potentials through integrated resources and filling the gap in
                 the financial funding ecosystem.
               </p>
-              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              <a href="#" onclick="openImage1();return false;"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -244,9 +250,10 @@
     <!-- ----------------------------------- Contact ----------------------------------- -->
     <div id="contact">
       <div class="container">
+        <h1 class="sub-title" style="margin-top: 70px">Contact Me</h1>
         <div class="row">
           <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
+            <!-- <h1 class="sub-title">Contact Me</h1> -->
             <p>
               <i class="fa-sharp fa-solid fa-envelope"></i> sdyaseen6@gmail.com
             </p>
@@ -274,32 +281,27 @@
           </div>
           <div class="contact-right">
             <!-- <div class="alert-container"> -->
-              <form name="submit-to-google-sheet" id="contact-form">
-                <input
-                  type="text"
-                  name="Name"
-                  placeholder="Your Name"
-                  required
-                />
-                <input
-                  type="number"
-                  name="Number"
-                  placeholder="Your Contact No."
-                  required
-                />
-                <input
-                  type="email"
-                  name="Email"
-                  placeholder="Your Mail ID"
-                  required
-                />
-                <textarea
-                  name="Message"
-                  rows="6"
-                  placeholder="Your Message"
-                ></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-              </form>
+            <form name="submit-to-google-sheet" id="contact-form">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="number"
+                name="Number"
+                placeholder="Your Contact No."
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Mail ID"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
             <!-- </div> -->
           </div>
 
@@ -309,15 +311,18 @@
               <!-- <span class="close-btn" onclick="closeAlert()">&times;</span> -->
               <h2>Thank you for your message!</h2>
               <p>...I will get back you soon...</p>
-      <button class="okay" id="close">OK</button>
-    </div>
+              <button class="okay" id="close">OK</button>
+            </div>
           </div>
         </div>
       </div>
       <div class="copyright">
         <p>
-          Copyright © Yaseen, Made with <i class="fa-solid fa-heart"></i> for
-          You.
+          Copyright © Yaseen,
+          <span style="color: aqua">
+            "Thank you for visiting my portfolio. Let's create something amazing
+            together!"
+          </span>
         </p>
       </div>
     </div>
