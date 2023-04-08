@@ -11,11 +11,20 @@ function opentab(tabname) {
   }
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
+
+  // scroll to the tab content with an offset of -220px
+  var tabContentTop = document.getElementById(tabname).offsetTop;
+  window.scrollTo(0, tabContentTop - 220);
 }
 
 // Portfolio section "See More" button functionality.
 function openImage() {
   window.open("/Images/coming soon.webp");
+}
+
+// Portfolio section "wip" button functionality.
+function openImage1() {
+  window.open("/Images/wip.jpg");
 }
 
 // Hamburger Menu functionality
@@ -106,7 +115,8 @@ function hideAlert() {
   localStorage.setItem("alertShown", "true");
 }
 close.addEventListener("click", hideAlert);
+
 // show the alert if it hasn't been shown yet
 // if (!localStorage.getItem("alertShown")) {
-//  displayAlert();
+//   displayAlert();
 // }
