@@ -14,13 +14,61 @@ body {
   color: #fff;
 }
 
+body.light-mode {
+  background: #fff;
+  color: #080808;
+}
+
+#theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#light-icon,
+#dark-icon {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 5px;
+}
+
+/* Default styles */
+#light-icon.hide {
+  display: none;
+}
+
+#dark-icon.hide {
+  display: none;
+}
+
+body.dark-mode #dark-icon {
+  display: none;
+}
+
+body.dark-mode #light-icon {
+  display: inline-block;
+}
+
+body.light-mode #light-icon {
+  display: none;
+}
+
+body.light-mode #dark-icon {
+  display: inline-block;
+}
+
 /* ----------------------------------- Landing Page -----------------------------------  */
 #header {
   width: 100%;
   height: 100vh;
   background-image: url(Images/profile\ pic.png);
-  background-size: 65%;
-  background-position: right center;
+  background-size: 30%;
+  background-position: 80% center;
   background-repeat: no-repeat;
 }
 
@@ -54,10 +102,11 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
   font-size: 18px;
   position: relative;
+  color: rgb(234, 230, 230);
 }
 
 nav ul li a::after {
@@ -83,7 +132,7 @@ nav ul li a:hover::after {
 
 .header-text h1 {
   font-size: 60px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .header-text h1 span {
@@ -93,7 +142,7 @@ nav ul li a:hover::after {
 /* ----------------------------------- About -----------------------------------  */
 #about {
   padding: 80px 0;
-  color: #ababab;
+  color: #fff;
 }
 
 .row {
@@ -130,7 +179,7 @@ nav ul li a:hover::after {
 
 .tab-links {
   margin-right: 50px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
@@ -140,7 +189,8 @@ nav ul li a:hover::after {
   content: "";
   width: 0;
   height: 3px;
-  background: rgb(0, 255, 255);
+  background: blue;
+  /* background: rgb(0, 255, 255); */
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -156,8 +206,8 @@ nav ul li a:hover::after {
   margin: 10px 0;
 }
 .tab-contents ul li span {
-  color: rgb(50, 250, 250);
-  font-size: 14px;
+  color: rgb(0, 255, 255);
+  font-size: 18px;
 }
 
 .tab-contents {
@@ -209,8 +259,8 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-  background: rgb(50, 250, 250);
-  color: black;
+  background: rgb(0, 255, 255);
+  color: #080808;
   transform: translateY(-10px);
 }
 
@@ -318,7 +368,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-  color: aqua;
+  color: rgb(0, 255, 255);
   margin-right: 15px;
   font-size: 25px;
 }
@@ -331,19 +381,20 @@ nav ul li a:hover::after {
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: #ababab;
+  color: #fff;
   display: inline-block;
   transition: transform 0.5s;
 }
 
 .social-icons a:hover {
-  color: aqua;
+  color: rgb(0, 255, 255);
   transform: translateY(-5px);
 }
 
 .btn.btn2 {
   display: inline-block;
   background: #ff004f;
+  color: #f5f5f5;
 }
 
 .contact-right form {
@@ -482,15 +533,15 @@ nav .fa-sharp {
 
 @media only screen and (max-width: 600px) {
   #header {
-    height: 60vh;
-    background-image: url(Images/resp\ pic.png);
+    height: 50vh;
+    background-image: url(Images/profile\ pic.png);
     background-size: 50vw auto;
     background-position: right center;
     background-repeat: no-repeat;
-    margin-top: 10vh;
+    margin-top: 15%;
   }
   .header-text {
-    margin-top: 70%;
+    margin-top: 50%;
     margin-left: 0;
     font-size: 16px;
     text-align: left;
@@ -558,7 +609,7 @@ nav .fa-sharp {
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   #header {
     height: 70vh;
-    background-image: url(Images/resp\ pic.png);
+    background-image: url(Images/profile\ pic.png);
     background-size: 50vw auto;
     background-position: right center;
     background-repeat: no-repeat;
@@ -599,5 +650,26 @@ nav .fa-sharp {
   }
   .copyright {
     font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1300px) {
+  #header {
+    height: 80vh;
+    background-image: url(Images/profile\ pic.png);
+    background-size: 40vw auto;
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    margin-top: 10vh;
+  }
+  .header-text {
+    margin-top: 30%;
+    margin-left: 0;
+    font-size: 20px;
+    text-align: left;
+    text-shadow: 1px 1px 2px black;
+  }
+  .header-text h1 {
+    font-size: 45px;
   }
 }
