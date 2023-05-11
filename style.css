@@ -32,9 +32,12 @@ body.light-mode {
 
 #light-icon,
 #dark-icon {
-  font-size: 20px;
+  font-size: 30px;
   color: #fff;
-  margin: 0 5px;
+  margin: 0 10px;
+  border: none;
+  background-color: transparent;
+  text-shadow: 0px 0px 20px red;
 }
 
 /* Default styles */
