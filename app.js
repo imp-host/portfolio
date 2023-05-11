@@ -122,10 +122,10 @@ close.addEventListener("click", hideAlert);
 // }
 
 // Toggle button to switch between light and dark theme along with color changes------------------------------------------------------------------------------------------------------
+
 const themeToggle = document.getElementById("theme-toggle");
 const lightIcon = document.getElementById("light-icon");
 const darkIcon = document.getElementById("dark-icon");
-
 // Function to set blue color for elements with rgb(0, 255, 255) color in light mode
 const setBlueColors = () => {
   const elements = document.querySelectorAll("*");
@@ -139,7 +139,6 @@ const setBlueColors = () => {
     }
   });
 };
-
 // Function to set original color for elements with blue color in dark mode
 const setOriginalColors = () => {
   const elements = document.querySelectorAll("*");
@@ -152,7 +151,6 @@ const setOriginalColors = () => {
     }
   });
 };
-
 // Function to toggle theme
 const toggleTheme = () => {
   const body = document.body;
@@ -169,10 +167,8 @@ const toggleTheme = () => {
     setOriginalColors();
   }
 };
-
 // Event listener for theme toggle button
 themeToggle.addEventListener("click", toggleTheme);
-
 // Set the initial state of the button based on the user's preference
 document.addEventListener("DOMContentLoaded", () => {
   if (localStorage.getItem("mode") === "dark") {
@@ -180,10 +176,14 @@ document.addEventListener("DOMContentLoaded", () => {
     lightIcon.classList.add("hide");
     darkIcon.classList.remove("hide");
     setOriginalColors();
-  } else {
-    document.body.classList.remove("dark-mode");
+  } else if (localStorage.getItem("mode") === "light") {
+    document.body.classList.add("light-mode");
     lightIcon.classList.remove("hide");
     darkIcon.classList.add("hide");
     setBlueColors();
+  } else {
+    document.body.classList.remove("light-mode");
+    lightIcon.classList.remove("hide");
+    darkIcon.classList.add("hide");
   }
 });
