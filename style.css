@@ -102,11 +102,10 @@ nav ul li {
 }
 
 nav ul li a {
-  /* color: #fff; */
   text-decoration: none;
   font-size: 18px;
   position: relative;
-  color: rgb(234, 230, 230);
+  color: rgb(250, 250, 250);
 }
 
 nav ul li a::after {
@@ -123,6 +122,10 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
   width: 100%;
+}
+
+.fa-sharp.fa-solid.fa-circle-chevron-down {
+  color: rgb(250, 250, 250);
 }
 
 .header-text {
